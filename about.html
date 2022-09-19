@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <title>4A1A Pizza - About us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="js/alpine.js"></script>
   <link rel="stylesheet" href="styles/tailwind.css" />
   <link rel="stylesheet" href="styles/style.css" />
 
@@ -16,7 +15,7 @@
     <input id="order-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <div class="mx-auto container">
-
+        <!-- START NAVBAR -->
         <div
           class="navbar navbar-main bg-red-600 sm:container sm:mx-auto sm:rounded-xl sm:my-4 shadow text-primary-content">
           <div class="navbar-start">
@@ -50,6 +49,8 @@
             </label>
           </div>
         </div>
+        <!-- END NAVBAR -->
+        <!-- START HERO -->
         <div class="sm:mt-5 sm:rounded-xl h-32 md:h-56">
           <div class="hero min-h-full sm:rounded-xl hero-inquiry">
             <div class="hero-overlay bg-opacity-60 sm:rounded-xl"></div>
@@ -60,6 +61,7 @@
             </div>
           </div>
         </div>
+        <!-- END HERO -->
         <div class="my-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           <a class="card bg-base-100 shadow hover:shadow-xl transition ease-in-out delay-500" href="minhpg.html">
             <figure class="h-1/2">
@@ -142,6 +144,7 @@
             </div>
           </a>
         </div>
+        <!-- START FOOTER -->
         <footer
           class="footer footer-main text-base-content p-10 bg-base-200 md:container md:mx-auto md:rounded-xl md:my-4 shadow">
           <div>
@@ -172,10 +175,12 @@
             </div>
           </div>
         </footer>
+        <!-- END FOOTER -->
       </div>
     </div>
     <div class="drawer-side">
       <label for="order-drawer" class="drawer-overlay"></label>
+      <!-- START DRAWER -->
       <div class="overflow-y-auto w-80 bg-base-100 text-base-content relative">
         <div class="m-4">
           <h2 class="m-3 text-3xl font-black text-center">
@@ -253,6 +258,7 @@
         </div>
 
       </div>
+      <!-- END DRAWER -->
     </div>
   </div>
 </body>

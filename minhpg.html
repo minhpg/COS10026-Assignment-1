@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <title>4A1A Pizza - Member</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="js/alpine.js"></script>
   <link rel="stylesheet" href="styles/tailwind.css" />
   <link rel="stylesheet" href="styles/style.css" />
 
@@ -16,7 +15,7 @@
     <input id="order-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <div class="mx-auto container">
-
+        <!-- START NAVBAR -->
         <div
           class="navbar navbar-main bg-red-600 sm:container sm:mx-auto sm:rounded-xl sm:my-4 shadow text-primary-content">
           <div class="navbar-start">
@@ -50,114 +49,9 @@
             </label>
           </div>
         </div>
-        <script>
-          const timetable = [{
-            day: 'Monday',
-            sessions: [{
-              course: 'COS10026',
-              type: 'Online',
-              span: 60
-            },
-            {
-              course: 'COS10026',
-              type: 'Seminar',
-              span: 60
-            },
-            {
-              course: null,
-              type: null,
-              span: 30
-            }, ,
-            {
-              course: null,
-              type: null,
-              span: 30
-            },
-            {
-              course: null,
-              type: null,
-              span: 30
-            },
-            {
-              course: null,
-              type: null,
-              span: 30
-            },
-            {
-              course: 'TNE10006',
-              type: 'Lecture',
-              span: 120
-            },
-            {
-              course: 'COS10004',
-              type: 'Online',
-              span: 60
-            }
-            ]
-          },
-          {
-            day: 'Tuesday',
-            sessions: [{
-              course: 'COS10009',
-              type: 'Online',
-              span: 120
-            },
-            {
-              course: 'COS10009',
-              type: 'Lab',
-              span: 120
-            }
-            ]
-          }, {
-            day: 'Wednesday',
-            sessions: [{
-              course: 'TNE10006',
-              type: 'Lab',
-              span: 180
-            }]
-          },
-          {
-            day: 'Thursday',
-            sessions: [{
-              course: 'COS10009',
-              type: 'Workshop',
-              span: 120
-            },
-            {
-              course: 'COS10026',
-              type: 'Workshop',
-              span: 120
-            },
-            {
-              course: null,
-              type: null,
-              span: 30
-            }, {
-              course: null,
-              type: null,
-              span: 30
-            }, {
-              course: null,
-              type: null,
-              span: 30
-            }, {
-              course: null,
-              type: null,
-              span: 30
-            }, {
-              course: 'COS10004',
-              type: 'Lab',
-              span: 120
-            }
-            ]
-          },
-          {
-            day: 'Friday',
-            sessions: []
-          }
-          ]
-        </script>
-        <section>
+        <!-- END NAVBAR -->
+        <!-- START MEMBER INFO -->
+        <div>
           <div class="card bg-base-100 shadow h-full">
             <div class="card-body">
               <div>
@@ -186,71 +80,163 @@
               </div>
             </div>
           </div>
-
-        </section>
+        </div>
         <div class="bg-base-100 shadow my-5 rounded-box p-4 overflow-x-scroll">
-
-          <script>
-            timetable_span = timetable.map((day) => {
-              const {
-                sessions
-              } = day
-              if (sessions) {
-                return sessions.map(session => {
-                  return session.span
-                }).reduce((a, b) => a + b, 0) / 30
-              }
-            })
-            timetable_span.map((value, index) => {
-              timetable[index].total_span = value
-            })
-
-            sorted_timetable = timetable_span.sort(function (a, b) {
-              if (a === Infinity)
-                return 1;
-              else if (isNaN(a))
-                return -1;
-              else
-                return b - a;
-            });
-            largest_span = sorted_timetable[0]
-
-
-            const timeConvert = (n) => {
-              const num = n;
-              const hours = (num / 60);
-              const rhours = Math.floor(hours);
-              const minutes = (hours - rhours) * 60;
-              const rminutes = Math.round(minutes);
-              return `${rhours}:${rminutes || '00'}`
-            }
-          </script>
-          <table class="w-full table table-compact timetable" x-data="{ timetable, largest_span }">
+          <!-- START TIMETABLE -->
+          <table class="w-full table table-compact timetable">
             <tbody>
               <tr>
                 <th class="w-5 h-10"></th>
-                <template x-for="i in largest_span">
-                  <th colspan="1" x-html="timeConvert((i+(8*2))/2*60)" class="w-5 h-10 bg-base-200"></th>
-                </template>
+                <th class="w-5 h-10 bg-base-200">08:30</th>
+                <th class="w-5 h-10 bg-base-200">09:00</th>
+                <th class="w-5 h-10 bg-base-200">09:30</th>
+                <th class="w-5 h-10 bg-base-200">10:00</th>
+                <th class="w-5 h-10 bg-base-200">10:30</th>
+                <th class="w-5 h-10 bg-base-200">11:00</th>
+                <th class="w-5 h-10 bg-base-200">11:30</th>
+                <th class="w-5 h-10 bg-base-200">12:00</th>
+                <th class="w-5 h-10 bg-base-200">12:30</th>
+                <th class="w-5 h-10 bg-base-200">13:00</th>
+                <th class="w-5 h-10 bg-base-200">13:30</th>
+                <th class="w-5 h-10 bg-base-200">14:00</th>
+                <th class="w-5 h-10 bg-base-200">14:30</th>
+                <th class="w-5 h-10 bg-base-200">15:00</th>
+                <th class="w-5 h-10 bg-base-200">15:30</th>
+                <th class="w-5 h-10 bg-base-200">16:00</th>
               </tr>
-              <template x-for="day in timetable">
-                <tr>
-                  <th x-html="day.day" class="w-10 bg-base-200"></th>
-                  <template x-for="session in day.sessions">
-                    <td x-show="session" :colspan="session.span/30" class="w-5 h-10"
-                      :class="session.course ? `${session.course}` : ''">
-                      <p x-html="session.course ? session.course : ''" class="font-bold"></p>
-                      <p x-html="session.course ? session.type : ''"></p>
-                    </td>
-                  </template>
-                  <template x-for="session in (largest_span - day.total_span)">
-                    <td class="w-5 h-10"></td>
-                  </template>
-                </tr>
-              </template>
+              <tr>
+                <th class="w-10 bg-base-200">Monday</th>
+
+                <td colspan="2" class="w-5 h-10 COS10026">
+                  <p class="font-bold">COS10026</p>
+                  <p>Online</p>
+                </td>
+                <td colspan="2" class="w-5 h-10 COS10026">
+                  <p class="font-bold">COS10026</p>
+                  <p>Seminar</p>
+                </td>
+                <td colspan="1" class="w-5 h-10 ">
+                  <p class="font-bold"></p>
+                  <p></p>
+                </td>
+                <td colspan="1" class="w-5 h-10 ">
+                  <p class="font-bold"></p>
+                  <p></p>
+                </td>
+                <td colspan="1" class="w-5 h-10 ">
+                  <p class="font-bold"></p>
+                  <p></p>
+                </td>
+                <td colspan="1" class="w-5 h-10 ">
+                  <p class="font-bold"></p>
+                  <p></p>
+                </td>
+                <td colspan="4" class="w-5 h-10 TNE10006">
+                  <p class="font-bold">TNE10006</p>
+                  <p>Lecture</p>
+                </td>
+                <td colspan="2" class="w-5 h-10 COS10004">
+                  <p class="font-bold">COS10004</p>
+                  <p>Online</p>
+                </td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+              </tr>
+              <tr>
+                <th class="w-10 bg-base-200">Tuesday</th>
+
+                <td colspan="4" class="w-5 h-10 COS10009">
+                  <p class="font-bold">COS10009</p>
+                  <p>Online</p>
+                </td>
+                <td colspan="4" class="w-5 h-10 COS10009">
+                  <p class="font-bold">COS10009</p>
+                  <p>Lab</p>
+                </td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+              </tr>
+              <tr>
+                <th class="w-10 bg-base-200">Wednesday</th>
+
+                <td colspan="6" class="w-5 h-10 TNE10006">
+                  <p class="font-bold">TNE10006</p>
+                  <p>Lab</p>
+                </td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+              </tr>
+              <tr>
+                <th class="w-10 bg-base-200">Thursday</th>
+
+                <td colspan="4" class="w-5 h-10 COS10009">
+                  <p class="font-bold">COS10009</p>
+                  <p>Workshop</p>
+                </td>
+                <td colspan="4" class="w-5 h-10 COS10026">
+                  <p class="font-bold">COS10026</p>
+                  <p>Workshop</p>
+                </td>
+                <td colspan="1" class="w-5 h-10 ">
+                  <p class="font-bold"></p>
+                  <p></p>
+                </td>
+                <td colspan="1" class="w-5 h-10 ">
+                  <p class="font-bold"></p>
+                  <p></p>
+                </td>
+                <td colspan="1" class="w-5 h-10 ">
+                  <p class="font-bold"></p>
+                  <p></p>
+                </td>
+                <td colspan="1" class="w-5 h-10 ">
+                  <p class="font-bold"></p>
+                  <p></p>
+                </td>
+                <td colspan="4" class="w-5 h-10 COS10004">
+                  <p class="font-bold">COS10004</p>
+                  <p>Lab</p>
+                </td>
+              </tr>
+              <tr>
+                <th class="w-10 bg-base-200">Friday</th>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+                <td class="w-5 h-10"></td>
+              </tr>
             </tbody>
           </table>
+          <!-- END TIMETABLE -->
         </div>
+        <!-- END MEMBER INFO -->
+        <!-- START FOOTER -->
         <footer
           class="footer footer-main text-base-content p-10 bg-base-200 md:container md:mx-auto md:rounded-xl md:my-4 shadow">
           <div>
@@ -281,10 +267,12 @@
             </div>
           </div>
         </footer>
+        <!-- END FOOTER -->
       </div>
     </div>
     <div class="drawer-side">
       <label for="order-drawer" class="drawer-overlay"></label>
+      <!-- START DRAWER -->
       <div class="overflow-y-auto w-80 bg-base-100 text-base-content relative">
         <div class="m-4">
           <h2 class="m-3 text-3xl font-black text-center">
@@ -362,6 +350,7 @@
         </div>
 
       </div>
+      <!-- END DRAWER -->
     </div>
   </div>
 </body>

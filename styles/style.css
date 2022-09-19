@@ -1,6 +1,6 @@
 /*!
-* style.css - https://github.com/minhpg/COS10026-Assignment-Project
-* Copyright (c) 2022 4A1A Group - COS10026
+* style.css - https://github.com/minhpg/COS10026-Assignment-1
+* Copyright (c) 2022 4A1A Group - COS10026 Assignment 1
 */
 
 /* description.css */
@@ -39,7 +39,7 @@ p.description-hidden {
   background-color: #cccc99;
 }
 .COS10025 {
-  background-color: #CCCC99;
+  background-color: #cccc99;
 }
 
 /* table-fix.css */
@@ -82,7 +82,7 @@ input[type="number"] {
 
 /* member.css */
 .member-img {
-    border: double 5px rgb(220 38 38 / var(--tw-bg-opacity)) !important;
+    border: double 5px rgb(220 38 38) !important;
     border-radius: 1px;
 }
 
@@ -92,15 +92,15 @@ input[type="number"] {
 
 /* hero.css */
 .hero-home {
-    background-image: url('images/hero/hero-home.jpeg');
+    background-image: url('images/hero/hero-home.jpeg'); /* Unsplash - https://unsplash.com/ */
 }
 
 .hero-menu {
-    background-image: url('images/hero/hero-menu.jpeg'); 
+    background-image: url('images/hero/hero-menu.jpeg'); /* Unsplash - https://unsplash.com/ */
 }
 
 .hero-inquiry {
-    background-image: url('images/hero/stone-background.jpeg'); 
+    background-image: url('images/hero/stone-background.jpeg'); /* Unsplash - https://unsplash.com/ */
 }
 
 /* other fixes */

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>4A1A Pizza - Pizza</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="js/alpine.js"></script>
     <link rel="stylesheet" href="styles/tailwind.css" />
     <link rel="stylesheet" href="styles/style.css" />
 
@@ -16,7 +15,7 @@
         <input id="order-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
             <div class="mx-auto container">
-
+                <!-- START NAVBAR -->
                 <div
                     class="navbar navbar-main bg-red-600 sm:container sm:mx-auto sm:rounded-xl sm:my-4 shadow text-primary-content">
                     <div class="navbar-start">
@@ -52,6 +51,8 @@
                         </label>
                     </div>
                 </div>
+                <!-- END NAVBAR -->
+                <!-- START SECONDARY NAVBAR -->
                 <div
                     class="navbar bg-base-200 sm:container sm:mx-auto sm:rounded-xl sm:my-4 shadow text-base-content overflow-x-scroll">
                     <div class="flex w-full justify-center">
@@ -64,6 +65,8 @@
                         <a href="product.html" class="btn btn-ghost">Meals</a>
                     </div>
                 </div>
+                <!-- END SECONDARY NAVBAR -->
+                <!-- START HERO -->
                 <div class="sm:mt-5 sm:rounded-xl h-32 md:h-48">
                     <div class="hero min-h-full sm:rounded-xl hero-menu">
                         <div class="hero-overlay bg-opacity-60 sm:rounded-xl"></div>
@@ -75,6 +78,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- END HERO -->
+                <!-- START MENU -->
                 <section class="mx-2 md:mx-0 my-5">
                     <div class="flex justify-center mb-4">
                         <h2 class="menu-section text-3xl font-black strikethrough-title">
@@ -82,6 +87,7 @@
                         </h2>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Garlic-Prawn/card.webp" alt="Garlic Prawn" class="w-full" />
@@ -89,9 +95,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Garlic Prawn
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Garlic Prawn </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Succulent prawns, garlic, diced tomato,
                                             green capsicum & mozzarella finished with aioli drizzle</p>
@@ -104,7 +108,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Garlic-Prawn" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Garlic-Prawn" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -419,6 +426,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Hot-Spicy-Chicken/card.webp" alt="Hot & Spicy Chicken"
@@ -427,9 +436,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Hot & Spicy Chicken
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Hot & Spicy Chicken </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Spicy jalapeños, tender chicken, juicy
                                             pineapple, onion, chilli flakes & mozzarella finished with aioli drizzle</p>
@@ -442,7 +449,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Hot-Spicy-Chicken" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Hot-Spicy-Chicken" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -758,6 +768,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/BBQ-Chicken/card.webp" alt="BBQ Chicken" class="w-full" />
@@ -765,9 +777,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        BBQ Chicken
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        BBQ Chicken </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Tender chicken, mushrooms, onion &
                                             mozzarella on rich BBQ sauce, finished with smoky BBQ drizzle</p>
@@ -780,7 +790,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="BBQ-Chicken" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="BBQ-Chicken" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -1095,6 +1108,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/vegan-deluxe-3425/card.webp" alt="Vegan Deluxe" class="w-full" />
@@ -1102,9 +1117,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Vegan Deluxe
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Vegan Deluxe </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Juicy pineapple, mushrooms, green
                                             capsicum, diced tomato, onion & vegan mozzarella, finished with oregano &
@@ -1118,7 +1131,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="vegan-deluxe-3425" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="vegan-deluxe-3425" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -1434,6 +1450,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Hawaiian/card.webp" alt="Hawaiian" class="w-full" />
@@ -1441,9 +1459,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Hawaiian
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Hawaiian </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Smoky honey ham, juicy pineapple &
                                             mozzarella</p>
@@ -1456,7 +1472,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Hawaiian" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Hawaiian" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -1771,6 +1790,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Super-Supreme/card.webp" alt="Super Supreme" class="w-full" />
@@ -1778,9 +1799,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Super Supreme
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Super Supreme </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Smoky honey ham, pepperoni, Italian
                                             sausage, beef, mushrooms, Kalamata olives, juicy pineapple, green capsicum,
@@ -1794,7 +1813,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Super-Supreme" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Super-Supreme" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -2110,6 +2132,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/BBQ-Meatlovers/card.webp" alt="BBQ Meatlovers" class="w-full" />
@@ -2117,9 +2141,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        BBQ Meatlovers
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        BBQ Meatlovers </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Streaky bacon rashers, smoky honey ham,
                                             pepperoni, Italian sausage, beef & mozzarella on rich BBQ sauce</p>
@@ -2132,7 +2154,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="BBQ-Meatlovers" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="BBQ-Meatlovers" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -2447,6 +2472,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/creamy-garlic-prawn-3314/card.webp" alt="Creamy Garlic Prawn"
@@ -2455,9 +2482,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Creamy Garlic Prawn
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Creamy Garlic Prawn </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Succulent prawns, garlic, mushrooms,
                                             onion, mozzarella on a creamy alfredo base, finished with parsley.</p>
@@ -2470,7 +2495,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="creamy-garlic-prawn-3314" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="creamy-garlic-prawn-3314" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -2787,6 +2815,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/creamy-chicken--bacon-34189/card.webp" alt="Creamy Chicken & Bacon"
@@ -2795,9 +2825,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Creamy Chicken & Bacon
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Creamy Chicken & Bacon </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Tender chicken, streaky bacon rashers,
                                             mushroom, onion, mozzarella on an alfredo base finished with parsley</p>
@@ -2810,7 +2838,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="creamy-chicken--bacon-34189" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="creamy-chicken--bacon-34189" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -3127,6 +3158,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Pepperoni-Lovers/card.webp" alt="Pepperoni Lovers" class="w-full" />
@@ -3134,9 +3167,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Pepperoni Lovers
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Pepperoni Lovers </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of pepperoni & mozzarella</p>
                                         <p class="mt-1 underline underline-offset-2 hover:text-red-600">View more</p>
@@ -3148,7 +3179,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Pepperoni-Lovers" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Pepperoni-Lovers" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -3462,6 +3496,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/surf--turf-3315/card.webp" alt="Surf & Turf" class="w-full" />
@@ -3469,9 +3505,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Surf & Turf
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Surf & Turf </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Succulent prawns, tender steak, lightly
                                             seasoned beef, diced tomato, onion & mozzarella on a tomato base.
@@ -3486,7 +3520,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="surf--turf-3315" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="surf--turf-3315" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -3803,6 +3840,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Butchers-Block/card.webp" alt="Butcher's Block" class="w-full" />
@@ -3810,9 +3849,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Butcher's Block
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Butcher's Block </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Steak, streaky bacon rashers,
                                             pepperoni, smoky honey ham, tender chicken, Italian sausage & mozzarella on
@@ -3826,7 +3863,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Butchers-Block" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Butchers-Block" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -4142,6 +4182,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
                     </div>
                 </section>
                 <section class="mx-2 md:mx-0 my-5">
@@ -4151,6 +4192,7 @@
                         </h2>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Half-Half-001/card.webp" alt="Half & Half" class="w-full" />
@@ -4158,9 +4200,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Half & Half
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Half & Half </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Choose your favourite 2 pizza varieties
                                             on a base of your choice & create a pizza your way.</p>
@@ -4173,7 +4213,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Half-Half-001" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Half-Half-001" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -4488,6 +4531,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/vegan-mediterranean--3423/card.webp" alt="Vegan Mediterranean "
@@ -4496,9 +4541,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Vegan Mediterranean
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Vegan Mediterranean </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Diced tomato, mushrooms, Kalamata
                                             olives, onion & vegan mozzarella</p>
@@ -4511,7 +4554,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="vegan-mediterranean--3423" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="vegan-mediterranean--3423" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -4828,6 +4874,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Chicken-Supreme/card.webp" alt="Chicken Supreme" class="w-full" />
@@ -4835,9 +4883,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Chicken Supreme
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Chicken Supreme </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Tender chicken, mushrooms, juicy
                                             pineapple, roasted red capsicum, green capsicum, onion & mozzarella</p>
@@ -4850,7 +4896,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Chicken-Supreme" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Chicken-Supreme" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -5165,6 +5214,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Veggie-Sensation/card.webp" alt="Veggie Sensation" class="w-full" />
@@ -5172,9 +5223,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Veggie Sensation
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Veggie Sensation </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Mushrooms, pineapple, diced tomato,
                                             green capsicum, Kalamata olives, cheddar, onion, oregano & mozzarella
@@ -5188,7 +5237,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Veggie-Sensation" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Veggie-Sensation" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -5504,6 +5556,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Ultimate-Hot-Spicy/card.webp" alt="Ultimate Hot & Spicy"
@@ -5512,9 +5566,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Ultimate Hot & Spicy
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Ultimate Hot & Spicy </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Spicy jalapeños, beef, pepperoni,
                                             Italian sausage, diced tomato, onion, chilli flakes & mozzarella finished
@@ -5528,7 +5580,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Ultimate-Hot-Spicy" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Ultimate-Hot-Spicy" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -5845,6 +5900,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Hot-Spicy-Veggie/card.webp" alt="Hot & Spicy Veggie" class="w-full" />
@@ -5852,9 +5909,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Hot & Spicy Veggie
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Hot & Spicy Veggie </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Spicy jalapeños, pineapple, roasted red
                                             capsicum, green capsicum, onion, chilli flakes & mozzarella with aioli
@@ -5868,7 +5923,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Hot-Spicy-Veggie" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Hot-Spicy-Veggie" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -6184,6 +6242,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/BBQ-Cheeseburger/card.webp" alt="BBQ Cheeseburger" class="w-full" />
@@ -6191,9 +6251,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        BBQ Cheeseburger
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        BBQ Cheeseburger </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lightly seasoned beef, smoky honey ham
                                             & mozzarella on rich BBQ sauce, finished with smoky BBQ drizzle</p>
@@ -6206,7 +6264,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="BBQ-Cheeseburger" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="BBQ-Cheeseburger" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -6521,6 +6582,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Ham-Lovers/card.webp" alt="Ham Lovers" class="w-full" />
@@ -6528,9 +6591,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Ham Lovers
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Ham Lovers </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of smoky honey ham & mozzarella
                                         </p>
@@ -6543,7 +6604,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Ham-Lovers" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Ham-Lovers" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -6857,6 +6921,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/vegan-margherita-3422/card.webp" alt="Vegan Margherita"
@@ -6865,9 +6931,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Vegan Margherita
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Vegan Margherita </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Diced tomato & vegan mozzarella,
                                             finished with oregano & garlic</p>
@@ -6880,7 +6944,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="vegan-margherita-3422" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="vegan-margherita-3422" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -7196,6 +7263,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/vegan-cheese-lovers-3421/card.webp" alt="Vegan Cheese Lovers"
@@ -7204,9 +7273,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Vegan Cheese Lovers
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Vegan Cheese Lovers </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of vegan mozzarella on a tomato
                                             base</p>
@@ -7219,7 +7286,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="vegan-cheese-lovers-3421" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="vegan-cheese-lovers-3421" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -7535,6 +7605,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/BBQ-Beef/card.webp" alt="BBQ Beef" class="w-full" />
@@ -7542,9 +7614,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        BBQ Beef
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        BBQ Beef </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lightly seasoned beef & mozzarella on
                                             rich BBQ sauce</p>
@@ -7557,7 +7627,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="BBQ-Beef" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="BBQ-Beef" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -7872,6 +7945,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Cheese-Lovers/card.webp" alt="Cheese Lovers" class="w-full" />
@@ -7879,9 +7954,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Cheese Lovers
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Cheese Lovers </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of mozzarella & tasty cheddar</p>
                                         <p class="mt-1 underline underline-offset-2 hover:text-red-600">View more</p>
@@ -7893,7 +7966,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Cheese-Lovers" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Cheese-Lovers" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -8207,6 +8283,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Create-Your-Own/card.webp" alt="Create Your Own" class="w-full" />
@@ -8214,9 +8292,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Create Your Own
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Create Your Own </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Choose your favourite 3 toppings, we’ll
                                             get you started with a pizza base topped with mozzarella & your choice of
@@ -8230,7 +8306,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Create-Your-Own" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Create-Your-Own" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -8546,6 +8625,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/mega-meatlovers-3419/card.webp" alt="Mega Meatlovers"
@@ -8554,9 +8635,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Mega Meatlovers
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Mega Meatlovers </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Steak, streaky bacon rashers, smoky
                                             honey ham, pepperoni, Italian sausage, lightly seasoned beef & mozzarella on
@@ -8570,7 +8649,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="mega-meatlovers-3419" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="mega-meatlovers-3419" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -8887,6 +8969,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Margherita/card.webp" alt="Margherita" class="w-full" />
@@ -8894,9 +8978,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Margherita
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Margherita </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Diced tomato & mozzarella, finished
                                             with oregano & garlic</p>
@@ -8909,7 +8991,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Margherita" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Margherita" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -9224,6 +9309,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
                     </div>
                 </section>
                 <section class="mx-2 md:mx-0 my-5">
@@ -9233,6 +9319,7 @@
                         </h2>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/veggie-sensation-personal-pan-3709/card.webp"
@@ -9241,9 +9328,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Veggie Sensation Personal Pan
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Veggie Sensation Personal Pan </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Mushrooms, pineapple, diced tomato,
                                             green capsicum, Kalamata olives, cheddar, onion & oregano, finished with
@@ -9257,7 +9342,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="veggie-sensation-personal-pan-3709" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="veggie-sensation-personal-pan-3709" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -9575,6 +9663,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Pepperoni-Lovers-Personal-Pan/card.webp"
@@ -9583,9 +9673,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Pepperoni Lovers Personal Pan
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Pepperoni Lovers Personal Pan </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of pepperoni & mozzarella on a
                                             Personal Pan</p>
@@ -9598,7 +9686,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Pepperoni-Lovers-Personal-Pan" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Pepperoni-Lovers-Personal-Pan" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -9915,6 +10006,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Cheese-Lovers-Personal-Pan/card.webp" alt="Cheese Lovers Personal Pan"
@@ -9923,9 +10016,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Cheese Lovers Personal Pan
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Cheese Lovers Personal Pan </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of tasty cheddar & mozzarella on a
                                             Personal Pan</p>
@@ -9938,7 +10029,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Cheese-Lovers-Personal-Pan" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Cheese-Lovers-Personal-Pan" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -10255,6 +10349,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/BBQ-Meatlovers-Personal-Pan/card.webp"
@@ -10263,9 +10359,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        BBQ Meatlovers Personal Pan
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        BBQ Meatlovers Personal Pan </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Streaky bacon rashers, smoky honey ham,
                                             pepperoni, Italian sausage, lightly seasoned beef on rich BBQ sauce on a
@@ -10279,7 +10373,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="BBQ-Meatlovers-Personal-Pan" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="BBQ-Meatlovers-Personal-Pan" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -10597,6 +10694,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Super-Supreme-Personal-Pan/card.webp" alt="Super Supreme Personal Pan"
@@ -10605,9 +10704,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Super Supreme Personal Pan
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Super Supreme Personal Pan </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Smoky honey ham, pepperoni, Italian
                                             sausage, lightly seasoned beef, mushrooms, Kalamata olives, juicy pineapple,
@@ -10621,7 +10718,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Super-Supreme-Personal-Pan" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Super-Supreme-Personal-Pan" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -10939,6 +11039,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/vegan-mediterranean-personal-pan-3721/card.webp"
@@ -10947,9 +11049,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Vegan Mediterranean Personal Pan
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Vegan Mediterranean Personal Pan </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Diced tomato, mushrooms, Kalamata
                                             olives, onion & vegan mozzarella</p>
@@ -10962,7 +11062,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="vegan-mediterranean-personal-pan-3721" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="vegan-mediterranean-personal-pan-3721" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -11280,6 +11383,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/Hawaiian-Personal-Pan/card.webp" alt="Hawaiian Personal Pan"
@@ -11288,9 +11393,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Hawaiian Personal Pan
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Hawaiian Personal Pan </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Smoky honey ham, juicy pineapple &
                                             mozzarella on a Personal Pan</p>
@@ -11303,7 +11406,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="Hawaiian-Personal-Pan" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="Hawaiian-Personal-Pan" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -11619,6 +11725,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
                     </div>
                 </section>
                 <section class="mx-2 md:mx-0 my-5">
@@ -11628,6 +11735,7 @@
                         </h2>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/super-supreme-with-blue-ranch-3251/card.webp"
@@ -11636,9 +11744,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Super Supreme With Blue Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Super Supreme With Blue Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Smoky honey ham, pepperoni, Italian
                                             sausage, beef, mushrooms, Kalamata olives, juicy pineapple, green capsicum,
@@ -11652,7 +11758,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="super-supreme-with-blue-ranch-3251" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="super-supreme-with-blue-ranch-3251" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -11970,6 +12079,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/super-supreme-with-maroon-ranch-3252/card.webp"
@@ -11978,9 +12089,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Super Supreme With Maroon Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Super Supreme With Maroon Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Smoky honey ham, pepperoni, Italian
                                             sausage, beef, mushrooms, Kalamata olives, juicy pineapple, green capsicum,
@@ -11994,7 +12103,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="super-supreme-with-maroon-ranch-3252" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="super-supreme-with-maroon-ranch-3252" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -12312,6 +12424,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/hawaiian-with-blue-ranch-3141/card.webp"
@@ -12320,9 +12434,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Hawaiian With Blue Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Hawaiian With Blue Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Smoky honey ham, juicy pineapple &
                                             mozzarella</p>
@@ -12335,7 +12447,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="hawaiian-with-blue-ranch-3141" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="hawaiian-with-blue-ranch-3141" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -12652,6 +12767,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/hawaiian-with-maroon-ranch-3142/card.webp"
@@ -12660,9 +12777,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Hawaiian With Maroon Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Hawaiian With Maroon Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Smoky honey ham, juicy pineapple &
                                             mozzarella</p>
@@ -12675,7 +12790,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="hawaiian-with-maroon-ranch-3142" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="hawaiian-with-maroon-ranch-3142" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -12992,6 +13110,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/cheese-lovers-with-blue-ranch-3081/card.webp"
@@ -13000,9 +13120,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Cheese Lovers with Blue Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Cheese Lovers with Blue Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of mozzarella & tasty cheddar</p>
                                         <p class="mt-1 underline underline-offset-2 hover:text-red-600">View more</p>
@@ -13014,7 +13132,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="cheese-lovers-with-blue-ranch-3081" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="cheese-lovers-with-blue-ranch-3081" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -13330,6 +13451,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/cheese-lovers-with-maroon-ranch-3082/card.webp"
@@ -13338,9 +13461,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Cheese Lovers with Maroon Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Cheese Lovers with Maroon Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of mozzarella & tasty cheddar</p>
                                         <p class="mt-1 underline underline-offset-2 hover:text-red-600">View more</p>
@@ -13352,7 +13473,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="cheese-lovers-with-maroon-ranch-3082" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="cheese-lovers-with-maroon-ranch-3082" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -13668,6 +13792,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/pepperoni-lovers-with-blue-ranch-3231/card.webp"
@@ -13676,9 +13802,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Pepperoni Lovers with Blue Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Pepperoni Lovers with Blue Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of pepperoni & mozzarella</p>
                                         <p class="mt-1 underline underline-offset-2 hover:text-red-600">View more</p>
@@ -13690,7 +13814,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="pepperoni-lovers-with-blue-ranch-3231" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="pepperoni-lovers-with-blue-ranch-3231" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -14007,6 +14134,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/pepperoni-lovers-with-maroon-ranch-3232/card.webp"
@@ -14015,9 +14144,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        Pepperoni Lovers with Maroon Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        Pepperoni Lovers with Maroon Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Lots of pepperoni & mozzarella</p>
                                         <p class="mt-1 underline underline-offset-2 hover:text-red-600">View more</p>
@@ -14029,8 +14156,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="pepperoni-lovers-with-maroon-ranch-3232"
-                            class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="pepperoni-lovers-with-maroon-ranch-3232" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -14347,6 +14476,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/bbq-meatlovers-with-blue-ranch-3052/card.webp"
@@ -14355,9 +14486,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        BBQ Meatlovers with Blue Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        BBQ Meatlovers with Blue Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Streaky bacon rashers, smoky honey ham,
                                             pepperoni, Italian sausage, beef & mozzarella on rich BBQ sauce</p>
@@ -14370,7 +14499,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="bbq-meatlovers-with-blue-ranch-3052" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="bbq-meatlovers-with-blue-ranch-3052" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -14687,6 +14819,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
+                        <!-- START CARD -->
                         <div class="card bg-base-100 shadow hover:shadow-xl ease-in-out duration-300">
                             <figure>
                                 <img src="images/bbq-meatlovers-with-maroon-ranch-3053/card.webp"
@@ -14695,9 +14829,7 @@
                             <div class="card-body p-4 justify-between">
                                 <div class="p-1">
                                     <h2 class="card-title text-lg font-bold">
-                                        BBQ Meatlovers with Maroon Ranch
-                                        <!-- <div class="badge badge-success">NEW</div> -->
-                                    </h2>
+                                        BBQ Meatlovers with Maroon Ranch </h2>
                                     <div class="text-sm mt-1">
                                         <p class="font-light description-hidden">Streaky bacon rashers, smoky honey ham,
                                             pepperoni, Italian sausage, beef & mozzarella on rich BBQ sauce</p>
@@ -14710,7 +14842,10 @@
                                         details</label>
                                 </div>
                             </div>
-                        </div><input type="checkbox" id="bbq-meatlovers-with-maroon-ranch-3053" class="modal-toggle" />
+                        </div>
+                        <!-- END CARD -->
+                        <!-- START MODAL -->
+                        <input type="checkbox" id="bbq-meatlovers-with-maroon-ranch-3053" class="modal-toggle" />
                         <div class="modal">
                             <div class="modal-box flex p-0 max-w-3xl">
                                 <aside class="hidden md:block">
@@ -15028,8 +15163,11 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- END MODAL -->
                     </div>
                 </section>
+                <!-- END MENU -->
+                <!-- START FOOTER -->
                 <footer
                     class="footer footer-main text-base-content p-10 bg-base-200 md:container md:mx-auto md:rounded-xl md:my-4 shadow">
                     <div>
@@ -15060,10 +15198,12 @@
                         </div>
                     </div>
                 </footer>
+                <!-- END FOOTER -->
             </div>
         </div>
         <div class="drawer-side">
             <label for="order-drawer" class="drawer-overlay"></label>
+            <!-- START DRAWER -->
             <div class="overflow-y-auto w-80 bg-base-100 text-base-content relative">
                 <div class="m-4">
                     <h2 class="m-3 text-3xl font-black text-center">
@@ -15146,6 +15286,7 @@
                 </div>
 
             </div>
+            <!-- END DRAWER -->
         </div>
     </div>
 </body>
