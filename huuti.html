@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-theme="light">
+<html data-theme="light" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <script defer src="js/alpine.js"></script>
   <link rel="stylesheet" href="styles/tailwind.css" />
   <link rel="stylesheet" href="styles/style.css" />
+
 </head>
 
 <body>
@@ -40,13 +41,13 @@
           </div>
           <div class="navbar-end">
             <label for="order-drawer" class="drawer-button btn btn-ghost btn-circle">
-              <div class="indicator">
+              <a class="indicator">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path
                     d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                 </svg> <span class="badge badge-xs badge-alert indicator-item"></span>
-              </div>
-              </button>
+              </a>
+            </label>
           </div>
         </div>
         <script>
@@ -300,7 +301,7 @@
     </div>
     <div class="drawer-side">
       <label for="order-drawer" class="drawer-overlay"></label>
-      <ul class="overflow-y-auto w-80 bg-base-100 text-base-content relative">
+      <div class="overflow-y-auto w-80 bg-base-100 text-base-content relative">
         <div class="m-4">
           <h2 class="m-3 text-3xl font-black text-center">
             Your Cart
@@ -358,12 +359,12 @@
             <h3 class="my-2 font-bold text-sm">Do you have a coupon?</h3>
             <input type="text" placeholder="Coupons" class="input input-bordered w-full" />
           </div>
-          <h3 class="m-4 text-2xl font-black flex justify-between">
+          <div class="m-4 text-2xl font-black flex justify-between">
             Total: <div class="block">
               <p class="text-xl text-gray-500 font-light text-right">$15.80</p>
               <p class="text-xs text-gray-500 font-light text-right">~4488kJ</p>
             </div>
-          </h3>
+          </div>
           <div class="m-4">
             <a class="btn bg-red-600 text-white border-0 w-full" href="#">
               Proceed to order
@@ -376,7 +377,7 @@
           </div>
         </div>
 
-      </ul>
+      </div>
     </div>
   </div>
 </body>

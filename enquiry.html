@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-theme="light">
+<html data-theme="light" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -41,13 +41,13 @@
           </div>
           <div class="navbar-end">
             <label for="order-drawer" class="drawer-button btn btn-ghost btn-circle">
-              <div class="indicator">
+              <a class="indicator">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                   <path
                     d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                 </svg> <span class="badge badge-xs badge-alert indicator-item"></span>
-              </div>
-              </button>
+              </a>
+            </label>
           </div>
         </div>
         <div class="sm:mt-5 sm:rounded-xl h-32 md:h-20">
@@ -66,129 +66,134 @@
             below to let us know what you love, and where we could improve.</p>
           <form class="mx-0 md:mx-20 mt-10 mb-5 font-light" method="post"
             action="http://mercury.swin.edu.au/it000000/formtest.php">
-            <label for="storeRelated">Does this feedback relate to a store?</label>
+            <p>Does this feedback relate to a store?</p>
             <div class="flex gap-4 my-3">
               <div class="form-control">
-                <label class="label cursor-pointer">
+                <label class="label cursor-pointer" for="storeRelated_true">
                   <span class="label-text mx-2">Yes</span>
-                  <input type="radio" name="storeRelated" class="radio" value="true" />
+                  <input type="radio" name="storeRelated" id="storeRelated_true" class="radio" value="true" />
                 </label>
               </div>
               <div class="form-control">
-                <label class="label cursor-pointer">
+                <label class="label cursor-pointer" for="storeRelated_false">
                   <span class="label-text mx-2">No</span>
-                  <input type="radio" name="storeRelated" class="radio" value="false" checked />
+                  <input type="radio" name="storeRelated" id="storeRelated_false" class="radio" value="false" checked />
                 </label>
               </div>
             </div>
             <label for="nature">What is the nature of your feedback? <b class="text-red-600">*</b><br>
-              <select name="nature" class="my-3 select w-full font-light" required>
-                <option default value="unspecified">Unspecified</option>
+              <select name="nature" id="nature" class="my-3 select w-full font-light" required>
+                <option selected disabled value>Select one</option>
                 <option value="complaint">Complaint</option>
                 <option value="compliment">Compliment</option>
                 <option value="employment">Employment</option>
               </select>
-              <label for="reason[]">Reason</label>
-              <div class="flex gap-4 my-3">
-                <div class="form-control">
-                  <label class="label cursor-pointer">
-                    <span class="label-text mx-2">Quality of Service</span>
-                    <input type="checkbox" name="reason[]" class="checkbox" value="qualityofservice" checked />
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="label cursor-pointer">
-                    <span class="label-text mx-2">Quality of Products</span>
-                    <input type="checkbox" name="reason[]" class="checkbox" value="qualityofproduct" />
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="label cursor-pointer">
-                    <span class="label-text mx-2">Others</span>
-                    <input type="checkbox" name="reason[]" class="checkbox" value="others" />
-                  </label>
-                </div>
+            </label>
+            <p>Reason</p>
+            <div class="flex gap-4 my-3">
+              <div class="form-control">
+                <label class="label cursor-pointer">
+                  <span class="label-text mx-2">Quality of Service</span>
+                  <input type="checkbox" name="reason[]" class="checkbox" id="reason_qualityofservice"
+                    value="qualityofservice" checked />
+                </label>
               </div>
+              <div class="form-control">
+                <label class="label cursor-pointer" for="reason_qualityofproduct">
+                  <span class="label-text mx-2">Quality of Products</span>
+                  <input type="checkbox" name="reason[]" class="checkbox" id="reason_qualityofproduct"
+                    value="qualityofproduct" />
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="label cursor-pointer" for="reason_others">
+                  <span class="label-text mx-2">Others</span>
+                  <input type="checkbox" name="reason[]" class="checkbox" id="reason_others" value="others" />
+                </label>
+              </div>
+            </div>
 
-              <label for="visitDate">Date of Visit: <b class="text-red-600">*</b></label>
-              <input type="date" name="visitDate" id="visit-date" placeholder="Choose date" autocomplete="off"
-                class="my-3 input w-full" required>
-              <label for="comment">Comment:</label>
-              <textarea name="comment" class="my-3 textarea w-full h-40" placeholder="Enter text here"></textarea>
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                <div>
-                  <label for="firstName">First name: <b class="text-red-600">*</b></label>
-                  <input type="text" name="firstName" id="first-name" maxlength="25" pattern="[a-zA-Z\s]*"
-                    placeholder="Enter first name" autocomplete="off" class="my-3 input w-full" required>
-                </div>
-                <div>
-                  <label for="lastName">Last name: <b class="text-red-600">*</b></label>
-                  <input type="text" name="lastName" id="last-name" maxlength="25" pattern="[a-zA-Z\s]*"
-                    placeholder="Enter last name" autocomplete="off" class="my-3 input w-full" required>
-                </div>
+            <label for="visit-date">Date of Visit: <b class="text-red-600">*</b></label>
+            <input type="date" name="visitDate" id="visit-date" autocomplete="off" class="my-3 input w-full" required>
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" class="my-3 textarea w-full h-40"
+              placeholder="Enter text here"></textarea>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div>
+                <label for="first-name">First name: <b class="text-red-600">*</b></label>
+                <input type="text" name="firstName" id="first-name" maxlength="25" pattern="[a-zA-Z\s]*"
+                  placeholder="Enter first name" autocomplete="off" class="my-3 input w-full" required>
               </div>
-              <label for="mobileNumber">Mobile Number: <b class="text-red-600">*</b></label>
-              <input type="text" name="mobileNumber" id="mobile-number" maxlength="10" pattern="\d{10}"
-                placeholder="Enter mobile number" autocomplete="off" class="my-3 input w-full">
-              <label for="emailAddress">Email Address: <b class="text-red-600">*</b></label>
-              <input type="email" name="email" id="email" placeholder="Enter email address" autocomplete="off"
-                class="my-3 input w-full" required>
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 my-3">
-                <div>
-                  <label for="streetAddress">Street address: <b class="text-red-600">*</b></label>
-                  <input type="text" name="streetAddress" id="street-address" maxlength="40" pattern="[0-9a-zA-Z\s]*"
-                    placeholder="Enter street address" autocomplete="off" class="my-3 input w-full" required>
-                </div>
-                <div>
-                  <label for="suburb">Suburb: <b class="text-red-600">*</b></label>
-                  <input type="text" name="suburb" id="suburb" maxlength="20" pattern="[a-zA-Z\s]*"
-                    placeholder="Enter suburb" autocomplete="off" class="my-3 input w-full" required>
-                </div>
-                <div>
-                  <label for="state">State: <b class="text-red-600">*</b></label>
-                  <select name="state" class="my-3 select w-full font-light" required>
-                    <option value="VIC" default>VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="postcode">Postcode: <b class="text-red-600">*</b></label>
-                  <input type="text" name="postcode" id="postcode" maxlength="4" pattern="\d{4}"
-                    placeholder="Enter postcode" autocomplete="off" class="my-3 input w-full" required>
-                </div>
+              <div>
+                <label for="last-name">Last name: <b class="text-red-600">*</b></label>
+                <input type="text" name="lastName" id="last-name" maxlength="25" pattern="[a-zA-Z\s]*"
+                  placeholder="Enter last name" autocomplete="off" class="my-3 input w-full" required>
               </div>
-              <label for="contactMethod">Prefered contact</label>
-              <div class="flex gap-4 my-3">
-                <div class="form-control">
-                  <label class="label cursor-pointer">
-                    <span class="label-text mx-2">Email</span>
-                    <input type="radio" name="contactMethod" class="radio" value="email" checked />
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="label cursor-pointer">
-                    <span class="label-text mx-2">Post</span>
-                    <input type="radio" name="contactMethod" class="radio" value="post" />
-                  </label>
-                </div>
-                <div class="form-control">
-                  <label class="label cursor-pointer">
-                    <span class="label-text mx-2">Phone</span>
-                    <input type="radio" name="contactMethod" class="radio" value="phone" />
-                  </label>
-                </div>
+            </div>
+            <label for="mobile-number">Mobile Number: <b class="text-red-600">*</b></label>
+            <input type="text" name="mobileNumber" id="mobile-number" maxlength="10" pattern="\d{10}"
+              placeholder="Enter mobile number" autocomplete="off" class="my-3 input w-full" required>
+            <label for="email-address">Email Address: <b class="text-red-600">*</b></label>
+            <input type="email" name="email" id="email-address" placeholder="Enter email address" autocomplete="off"
+              class="my-3 input w-full" required>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 my-3">
+              <div>
+                <label for="street-address">Street address: <b class="text-red-600">*</b></label>
+                <input type="text" name="streetAddress" id="street-address" maxlength="40" pattern="[0-9a-zA-Z\s]*"
+                  placeholder="Enter street address" autocomplete="off" class="my-3 input w-full" required>
               </div>
-              <div class="flex justify-between w-full text-sm mb-4">
-                <p> Required field.<b class="text-red-600">*</b></p>
-                <p>We'll never share your details with anyone else.</p>
+              <div>
+                <label for="suburb">Suburb: <b class="text-red-600">*</b></label>
+                <input type="text" name="suburb" id="suburb" maxlength="20" pattern="[a-zA-Z\s]*"
+                  placeholder="Enter suburb" autocomplete="off" class="my-3 input w-full" required>
               </div>
-              <input type="submit" class="my-3 btn btn-ghost bg-red-600 text-white w-full lg:w-32"></input>
+              <div>
+                <label for="state">State: <b class="text-red-600">*</b></label>
+                <select name="state" id="state" class="my-3 select w-full font-light" required>
+                  <option selected disabled value>Select one</option>
+                  <option value="VIC">VIC</option>
+                  <option value="NSW">NSW</option>
+                  <option value="QLD">QLD</option>
+                  <option value="NT">NT</option>
+                  <option value="WA">WA</option>
+                  <option value="SA">SA</option>
+                  <option value="TAS">TAS</option>
+                  <option value="ACT">ACT</option>
+                </select>
+              </div>
+              <div>
+                <label for="postcode">Postcode: <b class="text-red-600">*</b></label>
+                <input type="text" name="postcode" id="postcode" maxlength="4" pattern="\d{4}"
+                  placeholder="Enter postcode" autocomplete="off" class="my-3 input w-full" required>
+              </div>
+            </div>
+            <p>Prefered contact</p>
+            <div class="flex gap-4 my-3">
+              <div class="form-control">
+                <label class="label cursor-pointer" for="contact_email">
+                  <span class="label-text mx-2">Email</span>
+                  <input type="radio" name="contactMethod" id="contact_email" class="radio" value="email" checked />
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="label cursor-pointer" for="contact_post">
+                  <span class="label-text mx-2">Post</span>
+                  <input type="radio" name="contactMethod" id="contact_post" class="radio" value="post" />
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="label cursor-pointer" for="contact_phone">
+                  <span class="label-text mx-2">Phone</span>
+                  <input type="radio" name="contactMethod" id="contact_phone" class="radio" value="phone" />
+                </label>
+              </div>
+            </div>
+            <div class="flex justify-between w-full text-sm mb-4">
+              <p>Required field.<b class="text-red-600">*</b></p>
+              <p>We'll never share your details with anyone else.</p>
+            </div>
+            <label for="submit"></label>
+            <input type="submit" id="submit" class="my-3 btn btn-ghost bg-red-600 text-white w-full lg:w-32" />
           </form>
 
         </div>
@@ -226,7 +231,7 @@
     </div>
     <div class="drawer-side">
       <label for="order-drawer" class="drawer-overlay"></label>
-      <ul class="overflow-y-auto w-80 bg-base-100 text-base-content relative">
+      <div class="overflow-y-auto w-80 bg-base-100 text-base-content relative">
         <div class="m-4">
           <h2 class="m-3 text-3xl font-black text-center">
             Your Cart
@@ -284,12 +289,12 @@
             <h3 class="my-2 font-bold text-sm">Do you have a coupon?</h3>
             <input type="text" placeholder="Coupons" class="input input-bordered w-full" />
           </div>
-          <h3 class="m-4 text-2xl font-black flex justify-between">
+          <div class="m-4 text-2xl font-black flex justify-between">
             Total: <div class="block">
               <p class="text-xl text-gray-500 font-light text-right">$15.80</p>
               <p class="text-xs text-gray-500 font-light text-right">~4488kJ</p>
             </div>
-          </h3>
+          </div>
           <div class="m-4">
             <a class="btn bg-red-600 text-white border-0 w-full" href="#">
               Proceed to order
@@ -302,7 +307,7 @@
           </div>
         </div>
 
-      </ul>
+      </div>
     </div>
   </div>
 </body>
